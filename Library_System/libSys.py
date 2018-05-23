@@ -1,27 +1,43 @@
-# Creating library management system using python
+# Creating library management system using python basic fundamentals
 
 
-# func to add Books
+# Global variables
+quant = 0
+
+
+# fun to increase quantity of books
+def increaseQuantity(quant):
+    quant = quant + 1
+
+# fun to decrease quantity of books
+
+def decreaseQuantity(quant):
+    quant = quant-1
+
+
+# fun to add Books
 def addBooks():
     print("Add Books")
+    increaseQuantity(quant)
 
 
-# func to add members
+# fun to add members
 def addMembers():
     print("Add Members")
 
 
-# func to Issue books
+# fun to Issue books
 def issueBooks():
     print("Issue Books")
+    decreaseQuantity(quant)
 
 
-# func  to View Books
+# fun  to View Books
 def viewBooks():
     print("View Books")
 
 
-# func to View Members
+# fun to View Members
 
 def viewMembers():
     print("View Members")
