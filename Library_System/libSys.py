@@ -1,6 +1,6 @@
 # Creating library management system using python basic fundamentals
 
-# Books related data
+# Books related data initally available
 
 bookId = [1, 2, 3, 4, 5]
 bookName = ['c', 'c++', 'python', 'java', 'css']
@@ -9,7 +9,7 @@ bookQuantity = [1, 2, 2, 3, 1]
 bookIdName = dict(zip(bookId, bookName))
 bookNameQuant = dict(zip(bookName, bookQuantity))
 
-# Members related data
+# Members related data initially present
 
 memberId = [1, 2, 3, 4, 5]
 memberName = ['a', 'b', 'c', 'd', 'e']
@@ -68,10 +68,11 @@ def addBooks():
     bookId.append(id)
     bookName.append(name)
 
-
     # add values in dictionary
 
     bookIdName[id] = name
+
+    print("Book is added successfully!!")
 
     increaseQuantity(bookNameQuant, name, quantity)
 
@@ -91,15 +92,46 @@ def addMembers():
     # add value to dictionary
     memberDict[memid] = memName
 
+    print("Member is added successfully!!")
+
+
 # fun to Issue books
 
 def issueBooks():
 
     print("Issue Books\n")
 
+    id = int(input("Enter Book Id : "))
+    name = input('Enter Book Name : ')
+    quant = int(input('Enter Book Quantity : '))
 
+    for key, value in bookNameQuant.items():
 
+        if key == name:
+            flag = True
+            print(key)
+            break
+        else:
+            flag = False
 
+    if flag == False:
+
+        print('Sorry! Book is not available now')
+
+    if flag == True:
+
+        if bookNameQuant[key] == 0:
+            print('Item is currently out of stock')
+        elif bookNameQuant[key] != 0:
+            value = bookNameQuant[key]
+            while value < quant:
+                print('That much quantity is not present now!!')
+                print('No of books available = ', bookNameQuant[key])
+
+                quant = int(input('Enter book quantity again : '))
+
+            print("Book Successfully issued!!")
+            decreaseQuantity(bookNameQuant, name, quant)
 
 
 # fun  to View Books
@@ -108,8 +140,7 @@ def viewBooks():
     print("View Books\n")
 
     for key, value in bookIdName.items():
-
-        print("Book id = ",  key)
+        print("Book id = ", key)
         print("Book Name = ", value)
         print("Book Quantity = ", bookNameQuant[value])
 
