@@ -2,6 +2,7 @@
 
 
 
+# Books related data
 
 bookId = [1, 2, 3, 4, 5]
 bookName = ['c', 'c++', 'python', 'java', 'css']
@@ -10,6 +11,12 @@ bookQuantity = [1, 2, 2, 3, 1]
 bookIdName = dict(zip(bookId, bookName))
 bookNameQuant = dict(zip(bookName, bookQuantity))
 
+# Members related data
+
+memberId = [1, 2, 3, 4, 5]
+memberName = ['a', 'b', 'c', 'd', 'e']
+
+memberDict = dict(zip(memberId, memberName))
 
 
 # fun to increase quantity of books
@@ -52,7 +59,7 @@ def decreaseQuantity(my_dic, name, quant):
 
 # fun to add Books
 def addBooks():
-    print("Add Books")
+    print("Add Books\n")
 
     id = int(input('Book Id : '))
     name = input("Book Name : ")
@@ -71,18 +78,27 @@ def addBooks():
 
 # fun to add members
 def addMembers():
-    print("Add Members")
+    print("Add Members\n")
 
+    memid = int(input('Enter member id : '))
+    memName = input("Enter member name : ")
+
+    # add value to lists
+    memberId.append(memid)
+    memberName.append(memName)
+
+    # add value to dictionary
+    memberDict[memid] = memName
 
 # fun to Issue books
 def issueBooks():
-    print("Issue Books")
+    print("Issue Books\n")
 
 
 
 # fun  to View Books
 def viewBooks():
-    print("View Books")
+    print("View Books\n")
 
     for key, value in bookIdName.items():
 
@@ -94,7 +110,14 @@ def viewBooks():
 # fun to View Members
 
 def viewMembers():
-    print("View Members")
+    print("View Members\n")
+
+    print("Total Number of Members : ", memberDict.__len__())
+    print('\n')
+
+    for key, value in memberDict.items():
+        print("Member id : ", key)
+        print("Member name : ", value)
 
 
 # Menu Bar

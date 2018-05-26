@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732cf75a-c9eb-4cde-8f75-17a214e6f964" name="Default" comment="adding set's file">
-      <change beforePath="$PROJECT_DIR$/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set.py" beforeDir="false" afterPath="$PROJECT_DIR$/set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library_System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_System/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library_System/libSys.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_System/libSys.py" afterDir="false" />
     </list>
@@ -78,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="32" />
     <option name="y" value="24" />
     <option name="width" value="927" />
@@ -159,10 +156,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="24" width="927" height="744" extended-state="4" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.335177" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2370892" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
