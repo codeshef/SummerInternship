@@ -1,7 +1,5 @@
 # Creating library management system using python basic fundamentals
 
-
-
 # Books related data
 
 bookId = [1, 2, 3, 4, 5]
@@ -20,6 +18,7 @@ memberDict = dict(zip(memberId, memberName))
 
 
 # fun to increase quantity of books
+
 def increaseQuantity(my_dic, name, quant):
     for key in my_dic:
         if key == name:
@@ -58,6 +57,7 @@ def decreaseQuantity(my_dic, name, quant):
 
 
 # fun to add Books
+
 def addBooks():
     print("Add Books\n")
 
@@ -77,6 +77,7 @@ def addBooks():
 
 
 # fun to add members
+
 def addMembers():
     print("Add Members\n")
 
@@ -91,12 +92,14 @@ def addMembers():
     memberDict[memid] = memName
 
 # fun to Issue books
+
 def issueBooks():
     print("Issue Books\n")
 
 
 
 # fun  to View Books
+
 def viewBooks():
     print("View Books\n")
 
