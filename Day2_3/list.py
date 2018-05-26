@@ -8,7 +8,7 @@ print(type(l))
 
 print(len(l))
 
-l = ['a','b','c',45,5.6,True]
+l = ['a', 'b', 'c', 45, 5.6, True]
 
 # print entire list
 
@@ -40,14 +40,14 @@ print(l)
 
 # insert value at index
 
-l.insert(0,'z')
+l.insert(0, 'z')
 print(l)
 
 # append  entire list at particular index and extend every element get unique index
-l.append(['z','x','y'])
+l.append(['z', 'x', 'y'])
 print(l)
 
-l.extend(['z','x','y'])
+l.extend(['z', 'x', 'y'])
 print(l)
 
 # Remove exact value pop index
