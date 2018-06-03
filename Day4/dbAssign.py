@@ -117,6 +117,7 @@ while ch == 'y':
     elif choice == 4:
         readData()
     elif choice == 5:
+        conn.close()
         break
     else:
         print("Invalid NUmber")
