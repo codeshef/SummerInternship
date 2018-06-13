@@ -1,5 +1,6 @@
 import tkinter as t
 import mysql.connector
+from tkinter import messagebox
 
 conn = mysql.connector.connect(user='root', password='anchal', host='127.0.0.1')
 
@@ -26,7 +27,7 @@ wind1 = t.Tk()
 wind1.title('Form')
 wind1.geometry("500x500")
 wind1.configure(bg="white")
-##wind1.wm_iconbitmap('1.ico')
+## wind1.wm_iconbitmap('1.ico')
 
 # Add text
 
@@ -49,7 +50,18 @@ emailInput = t.Entry(wind1)
 emailInput.grid(row=2, column=1, padx=120, pady=50)
 
 
+def insertDb(name, cN, email):
+    myCursor.execute("Insert into tkTbl(name,contactNo,email) values('" + name + "','" + cN + "', '" + email + "')")
+    print('Inserted Successfully into database!!')
+    conn.commit()
+    conn.close()
+    messagebox.showinfo("Success", "Inserted Successfully")
+
+
 def buttonClick():
+    # submitBtn["text"] = "Clicked"
+    # label3.configure(text ="Hello")
+
     print("Button Clicked")
     name = nameInput.get()
     print(name)
@@ -58,13 +70,11 @@ def buttonClick():
     email = emailInput.get()
     print(email)
 
-    myCursor.execute("Insert into tkTbl(name,contactNo,email) values('" + name + "','" + cN + "', '" + email + "')")
-    print('Inserted Successfully into database!!')
-    conn.commit()
-    conn.close()
+    insertDb(name, cN, email)
+
+    # Add Button
 
 
-# Add Button
 submitBtn = t.Button(wind1, text="Submit", bg='black', fg='white', command=buttonClick, font=("Comic Sans MS", 15))
 submitBtn.grid(row=3, column=1, padx=80, pady=50)
 

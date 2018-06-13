@@ -14,8 +14,8 @@
       <file leaf-file-name="tkGui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tkGui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="15">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -41,32 +41,19 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="500" />
-    <option name="y" value="38" />
+    <option name="x" value="445" />
+    <option name="y" value="10" />
     <option name="width" value="921" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tkGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tkGUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ticTacStart" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -143,13 +130,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="500" y="38" width="921" height="744" extended-state="0" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2494432" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.071544714" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41990668" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -171,6 +158,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tkGui.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkGui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkGui.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
           <folding>
@@ -182,8 +189,8 @@
     <entry file="file://$PROJECT_DIR$/tkGUIf.py" />
     <entry file="file://$PROJECT_DIR$/tkGui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="15">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
