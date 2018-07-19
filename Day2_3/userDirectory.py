@@ -2,7 +2,7 @@
 
 import os
 
-#print(os.getcwd())
+# print(os.getcwd())
 
 # take user input
 
@@ -10,22 +10,20 @@ name = input("Enter your name")
 age = input("Enter your age")
 phoneNo = input("Enter your phoneNo")
 
-#change directory
+# change directory
 
 os.chdir("/home/anchal/Desktop/userDirectory")
 
-#print(os.getcwd())
+# print(os.getcwd())
 
-if(os.path.isdir(name)):
+if os.path.isdir(name):
     print("Directory already exist")
 else:
     os.mkdir(name)
 
 print(name)
 
-
-os.chdir("/home/anchal/Desktop/userDirectory/"+name)
-
+os.chdir("/home/anchal/Desktop/userDirectory/" + name)
 
 # write user data into file
 data = open("userFile", "w")
@@ -39,14 +37,3 @@ data = open("userFile", "r")
 text = data.read()
 print(text)
 data.close()
-
-
-
-
-
-
-
-
-
-
-
